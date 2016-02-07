@@ -1,0 +1,46 @@
+body {
+  font-size: 8px
+
+}
+
+h1 {
+
+}
+
+/* ------- character styles ---------- */
+.lead {
+  font-size: 3em;
+}
+.hero-title {
+  font-size: 3em;
+}
+
+.brand {
+  font: white;
+}
+
+/* ------- helper styles ---------- */
+
+.pull-left {
+  float: left
+}
+
+/* ------- main container styles ---------- */
+
+
+
+/* ------- main container styles ---------- */
+
+
+/* ------- nav styles ---------- */
+
+.nav {
+  background-color: black;
+  height: 65px
+}
+
+
+
+
+
+/* ------- footer styles ---------- */
