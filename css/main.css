@@ -2,7 +2,7 @@ html {font-size: 1em;}
 
 body {
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;";
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   line-height: 1.45;
   margin: 0px;
@@ -19,43 +19,28 @@ h1, h2, h3, h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 3.157em;
 }
 
-h2 {font-size: 2.827em;}
+h2 {font-size: 2.369em;}
 
-h3 {font-size: 1.999em;}
+h3 {font-size: 1.777em;}
 
-h4 {font-size: 1.414em;}
+h4 {font-size: 1.333em;}
 
-small, .font-small {font-size: 0.707em;}
+small, .font-small {font-size: 0.75em;}
 
 /* ------- character styles ---------- */
 .brand {
   font: white;
 }
 .lead {
-  font-size: 2.6em;
+  line-height: 1.6;
+  margin-bottom: 1.414em;
 }
-.hero-title {
-  font-size: 3em;
+a:visited {
+  color: black;
 }
-.hero-link {
-  text-decoration: underline;
-}
-.partial-a-title {
-  font: black;
-
-}
-.partial-b-title {
-  font: white;
-
-}
-.partial-c-title {
-  font: black;
-
-}
-
 /* ------- helper styles ---------- */
 
 .pull-left {
@@ -73,11 +58,17 @@ small, .font-small {font-size: 0.707em;}
   background-color: black;
   height: 45px;
 }
+.nav-links{
+  font: white;
+}
 
 /* ------- hero styles ---------- */
 .hero {
   margin: auto;
   width: 90%;
+}
+.hero-link {
+  text-decoration: underline;
 }
 
 /* ------- partial-a styles ---------- */
@@ -87,11 +78,18 @@ small, .font-small {font-size: 0.707em;}
   height: 200px;
 }
 
+.partial-a-title {
+  font: black;
+}
+
 /* ------- partial-b styles ---------- */
 .partial-b {
   margin:inherit;
   background-color: black;
   height: 200px;
+}
+.partial-b-title {
+  font: white;
 }
 
 /* ------- partial-c styles ---------- */
@@ -99,6 +97,9 @@ small, .font-small {font-size: 0.707em;}
   margin:inherit;
   background-color: pink;
   height: 200px;
+}
+.partial-c-title {
+  font: black;
 }
 
 /* ------- about styles ---------- */
