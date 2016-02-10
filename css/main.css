@@ -12,13 +12,12 @@ p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-weight: inherit;
   line-height: 1.2;
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.441em;
 }
 
@@ -30,22 +29,38 @@ h4 {font-size: 1.25em;}
 
 small, .font-small {font-size: 0.8em;}
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 /* ------- character styles ---------- */
 .brand {
   font: white;
 }
 .lead {
-  line-height: 1.6;
-  margin-bottom: 1.414em;
+  line-height: 1.25em;
+  padding-bottom: 10%;
 }
-a:visited {
-  color: black;
-}
+
 /* ------- helper styles ---------- */
 
-.pull-left {
-  float: left
+.center {
+  margin: auto;
 }
+
+.right {
+  float: right;
+}
+
+/*.left {
+  float: left;
+}*/
+
 
 /* ------- main container styles ---------- */
 .main-container {
@@ -58,8 +73,38 @@ a:visited {
   background-color: black;
   height: 45px;
 }
-.nav-links{
+
+.nav-head{
+  display: block;
+  text-align: left;
+}
+
+ul {
+
+}
+
+.nav-links {
+  list-style-type: none;
+  text-align: right;
+  display: inline-block;
   font: white;
+  text-decoration: none;
+}
+li a {
+  display: inline-block;
+  text-align: center;
+  font: white;
+  text-decoration: none;
+}
+
+.nav > li {
+  text-decoration: none;
+  display: block;
+}
+
+.nav > a{
+  text-decoration: none;
+  display: block;
 }
 
 /* ------- hero styles ---------- */
@@ -67,8 +112,12 @@ a:visited {
   margin: auto;
   width: 90%;
 }
+.hero-link-container {
+  padding-bottom: 10%;
+}
 .hero-link {
   text-decoration: underline;
+  font-weight: 700;
 }
 
 /* ------- partial-a styles ---------- */
@@ -104,7 +153,7 @@ a:visited {
 
 /* ------- about styles ---------- */
 .about {
-  margin:inherit;
+  margin: inherit;
   background-color: yellow;
   height: 200px;
 }
