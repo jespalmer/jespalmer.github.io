@@ -47,6 +47,14 @@ a:visited {
   padding-bottom: 10%;
 }
 
+.project-name  {
+  font-weight: 600;
+}
+
+.about-title {
+  font-weight: 700;
+}
+
 /* ------- helper styles ---------- */
 
 .center {
@@ -61,8 +69,8 @@ a:visited {
   float: left;
 }*/
 
-
 /* ------- main container styles ---------- */
+
 .main-container {
   margin: auto;
 }
@@ -131,51 +139,94 @@ a:visited {
   background-color: black;
 }
 
-/* ------- project styles ---------- */
-#projects {
-  margin: auto;
-  padding-top: 0;
-}
-
 /* ------- gallery styles ---------- */
 
+/* ------- partial styles ---------- */
 
-
+.partial-container {
+  width:90%;
+  margin: auto;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 /* ------- partial-a styles ---------- */
 .partial-a {
-  margin:inherit;
   background-color: #009999;
 }
 
 .partial-a-title {
-  color: black;
+  color: white;
+}
+
+.partial-a .project-links-a p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* ------- partial-b styles ---------- */
+
 .partial-b {
-  margin:inherit;
   background-color: black;
-  height: 200px;
+  color: white;
 }
 .partial-b-title {
+  color: #FFCC00;
+}
+
+.partial-b .project-links-b p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.partial-b a {
   color: white;
+  text-decoration: none;
 }
 
 /* ------- partial-c styles ---------- */
 .partial-c {
-  margin:inherit;
-  background-color: pink;
-  height: 200px;
+  background-color: #CC6699;
 }
 .partial-c-title {
-  color: black;
+  color: white;
+}
+
+.partial-c a {
+  text-decoration: none;
 }
 
 /* ------- about styles ---------- */
 .about {
-  margin: inherit;
-  background-color: yellow;
-  height: 200px;
+  background-color: #FFCC00;
+  padding-bottom: 5%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15% auto;
+}
+
+.button {
+  border: 0 none;
+  padding: 12px 35px;
+  margin: 0 10px;
+  display: inline-block;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+}
+
+.button-dark {
+  border: 2px solid black;
+  background: black;
+  color: white;
+  font-weight: 700;
+}
+
+.button-dark:hover {
+  border: 2px solid black;
+  background: transparent;
+  color: black;
 }
 
 /* ------- footer styles ---------- */
@@ -183,6 +234,11 @@ footer {
   background-color: black;
   height: 45px;
   color: white;
+}
+
+footer .font-small {
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 /* ------- media queries ---------- */
