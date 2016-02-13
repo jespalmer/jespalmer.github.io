@@ -27,21 +27,21 @@ h3 {font-size: 1.563em;}
 
 h4 {font-size: 1.25em;}
 
-small, .font-small {font-size: 0.8em;}
+small, .font-small {font-size: 0.8em;
+}
 
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: underline;
 }
 
 a:visited {
   color: black;
+  text-decoration: underline;
 }
 
 /* ------- character styles ---------- */
-.brand {
-  font: white;
-}
+
 .lead {
   line-height: 1.25em;
   padding-bottom: 10%;
@@ -72,63 +72,83 @@ a:visited {
 .nav {
   background-color: black;
   height: 45px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
-.nav-head{
-  display: block;
-  text-align: left;
-}
-
-ul {
-
-}
-
-.nav-links {
+.nav-left ul {
   list-style-type: none;
-  text-align: right;
-  display: inline-block;
-  font: white;
-  text-decoration: none;
-}
-li a {
-  display: inline-block;
-  text-align: center;
-  font: white;
-  text-decoration: none;
+  float: right;
 }
 
-.nav > li {
+.nav ul {
   text-decoration: none;
-  display: block;
+  margin: 0;
+  padding: 0px 10px 0px 0px;
 }
 
-.nav > a{
-  text-decoration: none;
+.nav li {
+  float: left;
+  padding-left: 20px;
+}
+
+.nav a {
   display: block;
+  text-decoration: none;
+  color: white;
+  padding-top: 10px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.nav a:visited {
+  color: white;
 }
 
 /* ------- hero styles ---------- */
 .hero {
+  padding-top: 15%;
   margin: auto;
   width: 90%;
 }
 .hero-link-container {
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 .hero-link {
   text-decoration: underline;
   font-weight: 700;
+  padding-top: 3%;
 }
+
+/* ------- divider styles ---------- */
+.section-divider {
+  height: 30px;
+  background-color: black;
+}
+
+/* ------- project styles ---------- */
+#projects {
+  margin: auto;
+  padding-top: 0;
+}
+
+/* ------- gallery styles ---------- */
+
+
 
 /* ------- partial-a styles ---------- */
 .partial-a {
   margin:inherit;
-  background-color: teal;
-  height: 200px;
+  background-color: #009999;
 }
 
 .partial-a-title {
-  font: black;
+  color: black;
 }
 
 /* ------- partial-b styles ---------- */
@@ -138,7 +158,7 @@ li a {
   height: 200px;
 }
 .partial-b-title {
-  font: white;
+  color: white;
 }
 
 /* ------- partial-c styles ---------- */
@@ -148,7 +168,7 @@ li a {
   height: 200px;
 }
 .partial-c-title {
-  font: black;
+  color: black;
 }
 
 /* ------- about styles ---------- */
@@ -162,7 +182,7 @@ li a {
 footer {
   background-color: black;
   height: 45px;
-  font: white;
+  color: white;
 }
 
 /* ------- media queries ---------- */
