@@ -85,6 +85,7 @@ a:visited {
   width: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  z-index: 289;
 }
 
 .nav-left ul {

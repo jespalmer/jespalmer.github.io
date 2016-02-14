@@ -23,14 +23,14 @@
       <div class="nav">
         <ul class="nav-left">
           <li>
-            <a href="#top">Jesyka Palmer</a>
+            <a href="#top" id="scroll-top">Jesyka Palmer</a>
           </li>
           <ul>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects" id="scroll-projects">Projects</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" id="scroll-about">About</a>
             </li>
           </ul>
         </ul>
@@ -46,15 +46,15 @@
     </h4>
     <div class="hero-link-container">
       <div class="hero-link">
-        <a href="#research">IBM Design Research
+        <a href="#research" id="scroll-research">IBM Design Research
         </a>
       </div>
       <div class="hero-link">
-        <a href="#design">IBM Design Practices
+        <a href="#design" id="scroll-design">IBM Design Practices
         </a>
       </div>
       <div class="hero-link ">
-        <a href="#maries">Marie's Bakery</a>
+        <a href="#maries" id="scroll-maries">Marie's Bakery</a>
       </div>
     </div>
   </div>
@@ -263,7 +263,9 @@
   <footer>
     <div class="font-small">&copy; Jesyka Palmer 2016</div>
   </footer>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <!--scripts start-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- jquery touch gallery title -->
   <script type="text/javascript">
     $(function() {
       // See if this is a touch device
@@ -276,6 +278,39 @@
           $(this).closest('.boxInner').toggleClass('touchFocus');
         });
       }
+    });
+  </script>
+  <!-- jquery smooth scroll to id's -->
+  <script type="text/javascript">
+    $('#scroll-top').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#top").offset().top
+      }, 'slow');
+    });
+    $('#scroll-projects').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+      }, 'slow');
+    });
+    $('#scroll-about').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#about").offset().top
+      }, 'slow');
+    });
+    $('#scroll-research').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#research").offset().top
+      }, 'slow');
+    });
+    $('#scroll-design').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#design").offset().top
+      }, 'slow');
+    });
+    $('#scroll-maries').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#maries").offset().top
+      }, 'slow');
     });
   </script>
 </body>
