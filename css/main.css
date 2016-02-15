@@ -1,4 +1,4 @@
-html {font-size: 1em;}
+html {font-size: 1.1em;}
 
 body {
   background-color: white;
@@ -43,12 +43,17 @@ a:visited {
 /* ------- character styles ---------- */
 
 .lead {
-  line-height: 1.25em;
+  line-height: 1.6em;
   padding-bottom: 10%;
 }
 
 .project-name  {
   font-weight: 600;
+  margin-bottom: .1em;
+}
+
+.project-name-spacing {
+  margin-top: .4em;
 }
 
 .about-title {
@@ -61,14 +66,6 @@ a:visited {
   margin: auto;
 }
 
-.right {
-  float: right;
-}
-
-/*.left {
-  float: left;
-}*/
-
 /* ------- main container styles ---------- */
 
 .main-container {
@@ -79,7 +76,7 @@ a:visited {
 
 .nav {
   background-color: black;
-  height: 45px;
+  height: 55px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -108,7 +105,7 @@ a:visited {
   display: block;
   text-decoration: none;
   color: white;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .nav a:hover {
@@ -190,6 +187,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding-top: 10%;
   padding-bottom: 10%;
 }
+
 /* ------- partial-a styles ---------- */
 .partial-a {
   background-color: #009999;
@@ -242,22 +240,27 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   padding-bottom: 5%;
 }
 
+.about a{
+  text-decoration: none;
+}
+
 .button-container {
-    display: flex;
-    justify-content: flex-start;
-    margin: 15% auto;
+  display: flex;
+  justify-content: flex-start;
+  margin: 7% auto;
 }
 
 .button {
   border: 0 none;
   padding: 12px 35px;
-  margin: 0 10px;
+  margin-left: 0px;
+  margin-right: 5%;
   display: inline-block;
   text-transform: none;
   transition: all 80ms ease-in-out;
 }
 
-.button-dark {
+.button-dark, .button-dark:visited {
   border: 2px solid black;
   background: black;
   color: white;
@@ -269,6 +272,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   background: transparent;
   color: black;
 }
+
 
 /* ------- footer styles ---------- */
 footer {
@@ -284,30 +288,310 @@ footer .font-small {
 
 /* ------- media queries ---------- */
 @media only screen and (max-width : 480px) {
-   /* Smartphone view: 1 tile */
+
    .box {
       width: 50%;
       padding-bottom: 50%;
    }
 }
-@media only screen and (max-width : 650px) and (min-width : 481px) {
-   /* Tablet view: 2 tiles */
+@media only screen and (max-width : 750px) and (min-width : 481px) {
+  .hero {
+    padding-top: 10%;
+    width: 80%;
+    padding-bottom: 3%;
+  }
+
+  .lead {
+    padding-bottom: 3%;
+  }
+  .about .partial-container{
+    padding-bottom: 2%;
+    padding-top: 5%;
+  }
    .box {
       width: 50%;
       padding-bottom: 50%;
    }
 }
-@media only screen and (max-width : 1050px) and (min-width : 651px) {
-   /* Small desktop / ipad view: 3 tiles */
-   .box {
-      width: 33.3%;
-      padding-bottom: 33.3%;
-   }
+@media only screen and (max-width : 1050px) and (min-width : 751px) {
+  html {font-size: 1em;}
+
+  /* ------- character styles ---------- */
+  .project-name  {
+    margin-top: -10px;
+    font-size: 1.1em;
+  }
+
+  .project-name-spacing {
+    margin-top: .5em;
+  }
+
+  .about-title {
+    padding-top: 5%;
+  }
+
+  /* ------- partial styles ---------- */
+
+  .objective {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    margin-bottom: 5%;
+  }
+  .role {
+    float: right;
+    width: 45%;
+    margin-right:5%;
+    margin-bottom: 5%;
+
+  }
+
+  .project-links-a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* ------- hero styles ---------- */
+  .hero {
+    padding-top: 8%;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 27%;
+  }
+
+  .partial-container {
+    width:70%;
+    padding-bottom: 9%;
+  }
+
+  .lead {
+    line-height: 1.5em;
+    padding-bottom: 1%;
+    width: 60%;
+    float:left;
+  }
+
+  .hero-link-container {
+    margin-top: 1.75em;
+    width: 30%;
+    float: right;
+  }
+
+  .hero-link {
+    padding-top: 3%;
+    font-size: 1.1em;
+  }
+
+  /* ------- about styles ---------- */
+  .about {
+    padding-bottom: 1%;
+  }
+
+  .about .partial-container {
+    padding-top: 1%;
+  }
+
+  .button-container {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin-right: 2%;
+  }
+
+  /* Small desktop / ipad view: 3 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
 }
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
-   /* Medium desktop: 4 tiles */
-   .box {
-      width: 25%;
-      padding-bottom: 25%;
-   }
+  html {font-size: 1em;}
+
+  /* ------- character styles ---------- */
+  .project-name  {
+    margin-top: -50px;
+    font-size: 1.25em;
+  }
+
+  .project-name-spacing {
+    margin-top: .5em;
+  }
+
+  .about-title {
+    padding-top: 5%;
+  }
+
+  /* ------- partial styles ---------- */
+
+  .objective {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    margin-bottom: 5%;
+  }
+  .role {
+    float: right;
+    width: 45%;
+    margin-right:5%;
+    margin-bottom: 5%;
+  }
+
+  .project-links-a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* ------- hero styles ---------- */
+  .hero {
+    padding-top: 7%;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 18%;
+  }
+
+  .partial-container {
+    width:70%;
+    padding-bottom: 7%;
+  }
+
+  .lead {
+    line-height: 1.6em;
+    padding-bottom: 1%;
+    width: 60%;
+    float:left;
+  }
+
+  .hero-link-container {
+    margin-top: 1.75em;
+    width: 30%;
+    float: right;
+  }
+
+  .hero-link {
+    padding-top: 3%;
+    font-size: 1.1em;
+  }
+
+  /* ------- about styles ---------- */
+  .about {
+    padding-bottom: 2%;
+  }
+
+  .about .partial-container {
+    padding-top: 1%;
+  }
+
+  .button-container {
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin-right: 2%;
+  }
+
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+
+
+}
+
+@media only screen and (max-width : 1500px) and (min-width : 1291px) {
+  html {font-size: 1em;}
+
+  /* ------- character styles ---------- */
+  .project-name  {
+    margin-top: -50px;
+    font-size: 1.25em;
+  }
+
+  .project-name-spacing {
+    margin-top: .5em;
+  }
+
+  .about-title {
+    padding-top: 5%;
+  }
+
+  /* ------- partial styles ---------- */
+
+  .objective {
+    width: 45%;
+    margin-right: 5%;
+    float: left;
+    margin-bottom: 5%;
+  }
+  .role {
+    float: right;
+    width: 45%;
+    margin-right:5%;
+    margin-bottom: 5%;
+  }
+
+  .project-links-a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* ------- hero styles ---------- */
+  .hero {
+    padding-top: 7%;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 18%;
+  }
+
+  .partial-container {
+    width:70%;
+    padding-bottom: 7%;
+  }
+
+  .lead {
+    line-height: 1.6em;
+    padding-bottom: 1%;
+    width: 60%;
+    float:left;
+  }
+
+  .hero-link-container {
+    margin-top: 1.75em;
+    width: 30%;
+    float: right;
+  }
+
+  .hero-link {
+    padding-top: 3%;
+    font-size: 1.1em;
+  }
+
+  /* ------- about styles ---------- */
+  .about {
+    padding-bottom: 2%;
+  }
+
+  .about .partial-container {
+    padding-top: 1%;
+  }
+
+  .button-container {
+    margin-top: 2%;
+    margin-bottom: 0;
+  }
+
+  .button {
+    margin-right: 2%;
+  }
+
+  /* Medium desktop: 4 tiles */
+  .box {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+
+
 }
