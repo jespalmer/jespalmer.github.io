@@ -2,7 +2,7 @@ html {font-size: 1.1em;}
 
 body {
   background-color: white;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
   line-height: 1.45;
   margin: 0px;
@@ -12,7 +12,7 @@ p {margin-bottom: 1.3em;}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: inherit;
   line-height: 1.2;
 }
@@ -48,6 +48,7 @@ a:visited {
 }
 
 .project-name  {
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   margin-bottom: .1em;
 }
@@ -80,7 +81,7 @@ a:visited {
   position: fixed;
   top: 0;
   width: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto ', sans-serif;
   font-weight: 700;
   z-index: 289;
 }
@@ -124,6 +125,7 @@ a:visited {
 }
 .hero-link-container {
   padding-bottom: 15%;
+  font-family: 'Roboto ', sans-serif;
 }
 .hero-link {
   text-decoration: underline;
