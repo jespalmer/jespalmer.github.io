@@ -81,27 +81,28 @@ a:visited {
   z-index: 289;
 }
 
-.nav-left ul {
-  list-style-type: none;
-  float: right;
-}
-
-.nav ul {
-  text-decoration: none;
-  margin: 0;
-  padding: 0px 20px 0px 0px;
-}
-
-.nav li {
+.nav .nav-left ul {
   float: left;
-  padding-left: 20px;
+  padding-right: 5%;
+}
+
+.nav .nav-right ul {
+  float: right;
+  padding-left: 5%;
+}
+
+.nav .nav-left li {
+  list-style-type: none;
+}
+
+.nav .nav-right li {
+  list-style-type: none;
 }
 
 .nav a {
   display: block;
   text-decoration: none;
   color: #E5E0DD;
-  padding-top: 15px;
 }
 
 .nav a:hover {
@@ -173,20 +174,22 @@ a:visited {
    width: 100%;
 }
 .boxInner .titleBox {
-   position: absolute;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin-bottom: -50px;
-   background: #000;
-   background: rgba(0, 0, 0, 0.5);
-   color: #FFF;
-   padding: 10px;
-   text-align: center;
-   -webkit-transition: all 0.3s ease-out;
-   -moz-transition: all 0.3s ease-out;
-   -o-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
    margin-bottom: 0;
@@ -199,6 +202,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   margin: auto;
   padding-top: 13%;
   padding-bottom: 13%;
+}
+
+.partial-subcontainer {
+  display: table;
 }
 
 /* ------- partial-a styles ---------- */
@@ -367,13 +374,11 @@ footer .font-small {
     width: 45%;
     margin-right: 5%;
     float: left;
-    margin-bottom: 5%;
   }
   .role {
     float: right;
     width: 45%;
     margin-right:5%;
-    margin-bottom: 5%;
 
   }
 
@@ -459,13 +464,11 @@ footer .font-small {
     width: 45%;
     margin-right: 5%;
     float: left;
-    margin-bottom: 5%;
   }
   .role {
     float: right;
     width: 45%;
     margin-right:5%;
-    margin-bottom: 5%;
   }
 
   .project-links-a {
@@ -531,10 +534,31 @@ footer .font-small {
 
 }
 
-@media only screen and (max-width : 1500px) and (min-width : 1291px) {
+@media only screen and (min-width: 1291px) {
+
   html {font-size: 1em;}
 
+  .nav-left {
+    padding-left: 16%;
+    width: 200px;
+    text-align:center;
+    float: left;
+  }
+
+  .nav-right {
+    padding-left: 5%;
+    width: 500px;
+    float:right;
+  }
+
+  .nav-right li {
+    display: inline-block;
+    text-align:center;
+    width:27%;
+  }
+
   /* ------- character styles ---------- */
+
   .project-name  {
     font-size: 1.25em;
   }
@@ -553,13 +577,12 @@ footer .font-small {
     width: 45%;
     margin-right: 5%;
     float: left;
-    margin-bottom: 5%;
   }
+
   .role {
     float: right;
     width: 45%;
     margin-right:5%;
-    margin-bottom: 5%;
   }
 
   .project-links-a {
@@ -615,6 +638,12 @@ footer .font-small {
 
   .button {
     margin-right: 2%;
+  }
+
+  /*---- footer styles ----- */
+  footer .font-small {
+    padding-left: 20%;
+    padding-top: 14px;
   }
 
   /* Medium desktop: 4 tiles */
