@@ -1,7 +1,7 @@
-html {font-size: 1.1em;}
+html {font-size: 1em;}
 
 body {
-  background-color: white;
+  background-color: #FFF;
   font-family: 'Lora', serif;
   font-weight: 400;
   line-height: 1.45;
@@ -31,21 +31,16 @@ small, .font-small {font-size: 0.8em;
 }
 
 a {
-  color: black;
+  color: #232323;
   text-decoration: underline;
 }
 
 a:visited {
-  color: black;
+  color: #232323;
   text-decoration: underline;
 }
 
 /* ------- character styles ---------- */
-
-.lead {
-  line-height: 1.6em;
-  padding-bottom: 10%;
-}
 
 .project-name  {
   font-family: 'Roboto', sans-serif;
@@ -59,6 +54,7 @@ a:visited {
 
 .about-title {
   font-weight: 700;
+  padding-bottom: 3%;
 }
 
 /* ------- helper styles ---------- */
@@ -76,13 +72,12 @@ a:visited {
 /* ------- nav styles ---------- */
 
 .nav {
-  background-color: black;
+  background-color: #191919;
   height: 55px;
   position: fixed;
   top: 0;
   width: 100%;
   font-family: 'Roboto ', sans-serif;
-  font-weight: 700;
   z-index: 289;
 }
 
@@ -94,7 +89,7 @@ a:visited {
 .nav ul {
   text-decoration: none;
   margin: 0;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 20px 0px 0px;
 }
 
 .nav li {
@@ -105,7 +100,7 @@ a:visited {
 .nav a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #E5E0DD;
   padding-top: 15px;
 }
 
@@ -114,29 +109,45 @@ a:visited {
 }
 
 .nav a:visited {
-  color: white;
+  color: #E5E0DD;
 }
 
 /* ------- hero styles ---------- */
-.hero {
-  padding-top: 15%;
+
+.hero-container {
+  width: 85%;
   margin: auto;
-  width: 90%;
+  color: #E5E0DD;
+  padding-top: 25%;
+  padding-bottom: 10%;
 }
+
+.hero {
+  background-color: #780052;
+}
+
+.lead {
+  line-height: 1.6em;
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10%;
+  padding-top: 5%;
+}
+
 .hero-link-container {
   padding-bottom: 15%;
   font-family: 'Roboto ', sans-serif;
 }
+
 .hero-link {
   text-decoration: underline;
-  font-weight: 700;
-  padding-top: 3%;
+  padding-top: 2%;
+  font-size: 1.1em;
+
 }
 
-/* ------- divider styles ---------- */
-.section-divider {
-  height: 30px;
-  background-color: black;
+.hero-link a {
+  color: #E5E0DD;
 }
 
 /* ------- gallery styles ---------- */
@@ -184,22 +195,23 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 /* ------- partial styles ---------- */
 
 .partial-container {
-  width:90%;
+  width: 85%;
   margin: auto;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 13%;
+  padding-bottom: 13%;
 }
 
 /* ------- partial-a styles ---------- */
 .partial-a {
-  background-color: #009999;
+  background-color: #E5E0DD;
 }
 
 .partial-a-title {
-  color: white;
+  color: #780052;
 }
 
 .partial-a .project-links-a p {
+  font-family: "Roboto", sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -207,29 +219,44 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 /* ------- partial-b styles ---------- */
 
 .partial-b {
-  background-color: black;
-  color: white;
+  background-color: #E5E0DD;
+  color: #232323;
 }
 .partial-b-title {
-  color: #FFCC00;
+  color: #780052;
 }
 
 .partial-b .project-links-b p {
+  font-family: "Roboto", sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
+.partial-b .project-links-b p:hover {
+  text-decoration: underline;
+}
+
 .partial-b a {
-  color: white;
+  color: #232323;
   text-decoration: none;
 }
 
 /* ------- partial-c styles ---------- */
 .partial-c {
-  background-color: #CC6699;
+  background-color: #E5E0DD;
 }
 .partial-c-title {
-  color: white;
+  color: #780052;
+}
+
+.partial-c .project-links-c p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.partial-c .project-links-c p:hover {
+  text-decoration: underline;
 }
 
 .partial-c a {
@@ -238,11 +265,11 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 /* ------- about styles ---------- */
 .about {
-  background-color: #FFCC00;
+  background-color: #E5E0DD;
   padding-bottom: 5%;
 }
 
-.about a{
+.about a {
   text-decoration: none;
 }
 
@@ -253,6 +280,7 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .button {
+  font-family: "Roboto", sans-serif;;
   border: 0 none;
   padding: 12px 35px;
   margin-left: 0px;
@@ -263,64 +291,65 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 }
 
 .button-dark, .button-dark:visited {
-  border: 2px solid black;
-  background: black;
-  color: white;
-  font-weight: 700;
+  border: 2px solid #232323;
+  background: transparent;
+  color: #232323;
 }
 
 .button-dark:hover {
-  border: 2px solid black;
-  background: transparent;
-  color: black;
+  border: 2px solid #780052;
+  background: #780052;
+  color: #E5E0DD;
+
 }
 
 
 /* ------- footer styles ---------- */
 footer {
-  background-color: black;
+  background-color: #191919;
   height: 45px;
-  color: white;
+  color: #E5E0DD;
 }
 
 footer .font-small {
-  padding-left: 20px;
-  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10%;
+  padding-top: 15px;
 }
 
-/* ------- media queries ---------- */
-@media only screen and (max-width : 480px) {
 
-   .box {
-      width: 50%;
-      padding-bottom: 50%;
-   }
-}
-@media only screen and (max-width : 750px) and (min-width : 481px) {
-  .hero {
-    padding-top: 10%;
-    width: 80%;
-    padding-bottom: 3%;
+/* -------------------------------------------------- */
+
+@media only screen and (max-width : 770px) and (min-width : 481px) {
+  .hero-container {
+    width:85%;
+    padding-top: 15%;
+    padding-bottom: 5%;
+  }
+
+  .partial-container {
+    width: 85%;
+    padding-bottom: 8%;
+    padding-top: 5%;
   }
 
   .lead {
     padding-bottom: 3%;
   }
   .about .partial-container{
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     padding-top: 5%;
   }
-   .box {
-      width: 50%;
-      padding-bottom: 50%;
-   }
+  .box {
+    width: 50%;
+    padding-bottom: 50%;
+  }
 }
-@media only screen and (max-width : 1050px) and (min-width : 751px) {
-  html {font-size: 1em;}
+@media only screen and (max-width : 1050px) and (min-width : 771px) {
+  html {font-size: .95em;}
 
   /* ------- character styles ---------- */
   .project-name  {
-    margin-top: -10px;
     font-size: 1.1em;
   }
 
@@ -354,20 +383,20 @@ footer .font-small {
   }
 
   /* ------- hero styles ---------- */
-  .hero {
-    padding-top: 8%;
-    margin: auto;
-    width: 70%;
-    padding-bottom: 27%;
+
+  .hero-container {
+    width:70%;
+    padding-top: 15%;
+    padding-bottom: 30%;
   }
 
   .partial-container {
     width:70%;
-    padding-bottom: 9%;
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 
   .lead {
-    line-height: 1.5em;
     padding-bottom: 1%;
     width: 60%;
     float:left;
@@ -394,7 +423,7 @@ footer .font-small {
   }
 
   .button-container {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 0;
   }
 
@@ -413,7 +442,6 @@ footer .font-small {
 
   /* ------- character styles ---------- */
   .project-name  {
-    margin-top: -50px;
     font-size: 1.25em;
   }
 
@@ -446,16 +474,16 @@ footer .font-small {
   }
 
   /* ------- hero styles ---------- */
-  .hero {
-    padding-top: 7%;
-    margin: auto;
-    width: 70%;
-    padding-bottom: 18%;
+  .hero-container {
+    width:70%;
+    padding-top: 15%;
+    padding-bottom: 25%;
   }
 
   .partial-container {
     width:70%;
     padding-bottom: 7%;
+    padding-top: 7%;
   }
 
   .lead {
@@ -508,7 +536,6 @@ footer .font-small {
 
   /* ------- character styles ---------- */
   .project-name  {
-    margin-top: -50px;
     font-size: 1.25em;
   }
 
@@ -541,16 +568,17 @@ footer .font-small {
   }
 
   /* ------- hero styles ---------- */
-  .hero {
-    padding-top: 7%;
-    margin: auto;
-    width: 70%;
-    padding-bottom: 18%;
+
+  .hero-container {
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom: 20%;
   }
 
   .partial-container {
-    width:70%;
-    padding-bottom: 7%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width:50%;
   }
 
   .lead {
@@ -581,7 +609,7 @@ footer .font-small {
   }
 
   .button-container {
-    margin-top: 2%;
+    margin-top: 7%;
     margin-bottom: 0;
   }
 
@@ -594,6 +622,4 @@ footer .font-small {
     width: 25%;
     padding-bottom: 25%;
   }
-
-
 }
