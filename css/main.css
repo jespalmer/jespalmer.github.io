@@ -321,14 +321,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 /* ------- footer styles ---------- */
 footer {
   background-color: #191919;
-  height: 45px;
+  height: 65px;
   color: #E5E0DD;
 }
 
 footer .font-small {
   font-family: "Roboto", sans-serif;
-  padding-left: 10%;
-  padding-top: 15px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
 
@@ -686,14 +686,6 @@ footer .font-small {
   .button {
     margin-right: 2%;
   }
-
-  /*---- footer styles ----- */
-  footer .font-small {
-    padding-left: 20%;
-    padding-top: 14px;
-  }
-
-  /* Medium desktop: 4 tiles */
   .box {
     width: 25%;
     padding-bottom: 25%;
