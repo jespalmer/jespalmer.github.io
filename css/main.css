@@ -81,21 +81,28 @@ a:visited {
   z-index: 289;
 }
 
-.nav .nav-left ul {
+.nav-left {
+  padding-left: 4px;
+  width: 150px;
+  text-align: center;
   float: left;
-  padding-right: 5%;
 }
 
-.nav .nav-right ul {
+.nav-right {
+  padding-left: 1%;
+  padding-right: 4%;
   float: right;
-  padding-left: 5%;
+  width: 40%
 }
 
-.nav .nav-left li {
+.nav-right li {
+  display: inline-block;
+  text-align: center;
+  width: 48%;
   list-style-type: none;
 }
 
-.nav .nav-right li {
+.nav-left li {
   list-style-type: none;
 }
 
@@ -328,6 +335,21 @@ footer .font-small {
 /* -------------------------------------------------- */
 
 @media only screen and (max-width : 770px) and (min-width : 481px) {
+  .nav-left {
+    padding-left: 25px;
+    width: 150px;
+  }
+
+  .nav-right {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 40%
+  }
+
+  .nav-right li {
+    width: 40%;
+  }
+
   .hero-container {
     width:85%;
     padding-top: 15%;
@@ -354,6 +376,21 @@ footer .font-small {
 }
 @media only screen and (max-width : 1050px) and (min-width : 771px) {
   html {font-size: .95em;}
+
+  /* ------- nav styles ---------- */
+  .nav-left {
+    padding-left: 12%;
+    width: 150px;
+  }
+
+  .nav-right {
+    padding-right: 5%;
+    width: 250px;
+  }
+
+  .nav-right li {
+    width:30%;
+  }
 
   /* ------- character styles ---------- */
   .project-name  {
@@ -444,6 +481,20 @@ footer .font-small {
 }
 @media only screen and (max-width : 1290px) and (min-width : 1051px) {
   html {font-size: 1em;}
+  /* ------- nav styles ---------- */
+  .nav-left {
+    padding-left: 13%;
+    width: 150px;
+  }
+
+  .nav-right {
+    padding-right: 9%;
+    width: 300px;
+  }
+
+  .nav-right li {
+    width: 37%;
+  }
 
   /* ------- character styles ---------- */
   .project-name  {
@@ -538,22 +589,18 @@ footer .font-small {
 
   html {font-size: 1em;}
 
+  /* ------- nav styles ---------- */
   .nav-left {
     padding-left: 16%;
     width: 200px;
-    text-align:center;
-    float: left;
   }
 
   .nav-right {
     padding-left: 5%;
     width: 500px;
-    float:right;
   }
 
   .nav-right li {
-    display: inline-block;
-    text-align:center;
     width:27%;
   }
 
