@@ -230,6 +230,14 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
   margin-bottom: 0px;
 }
 
+.partial-a .project-links-a p:hover {
+  text-decoration: underline;
+}
+
+.partial-a a {
+  text-decoration: none;
+}
+
 /* ------- partial-b styles ---------- */
 
 .partial-b {
@@ -285,6 +293,10 @@ body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleB
 
 .about a {
   text-decoration: none;
+}
+
+.about a:hover {
+  text-decoration: underline;
 }
 
 .button-container {
